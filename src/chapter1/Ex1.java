@@ -9,9 +9,10 @@ public class Ex1 {
 	public static void main(String[] args) {
 		
 		Scanner scanf=new Scanner(System.in);
+		System.out.print("숫자를 입력하세요: ");
 		int val1=10;
 		int val2=1;
-		int[] val3=new int[5];
+		int[] val3=new int[3];
 		
 		try {
 //			System.out.println(val1/--val2);
@@ -34,11 +35,11 @@ public class Ex1 {
 			//catch(처리할 예외명,붙잡을 예외명)
 			System.out.println("배열의 범위를 벗어났습니다.");
 			System.out.println("배열의 마지막 요소를 출력합니다.");
+			//사용하려는 배열의 마지막 요소 출력
+			System.out.println("마지막요소:"+val3[val3.length-1]);//val3 변수를 try문 밖에 선언해줘야함.
 			
 			System.out.println(e.getMessage());
 			
-			//사용하려는 배열의 마지막 요소 출력
-			System.out.println(val3[val3.length-1]);//val3 변수를 try문 밖에 선언해줘야함.
 			e.printStackTrace();
 		} catch (NullPointerException e) {
 			System.out.println("NullPointerException 발생");

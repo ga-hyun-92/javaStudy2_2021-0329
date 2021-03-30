@@ -36,7 +36,7 @@ public class Ex2_2 {
 		 return 0;
 	}
 	
-	static void makeException(boolean turn) throws MyException{//호출한 쪽에서 예외발생되도록 한다.
+	static void makeException(boolean turn) throws MyException {//호출한 쪽에서 예외발생되도록 한다.
 		System.out.println("makeException실행");
 			
 		if (turn) {
@@ -54,22 +54,23 @@ public class Ex2_2 {
 		
 		//readArrayElement가 예외를 던지는데 처리(try-catch)하지 않았음에도 컴파일 오류가 발생하지 않음
 		//Runtime Exception-uncheck Exception  컴파일할때 처리 안해줘도 됨.
-//		try {
-			int result2=readArrayElement(3);
-			System.out.println(result2);
-//		} catch (ArrayIndexOutOfBoundsException e) {
-//			System.out.println(e.getMessage());
-//		}
+		try {
+			int result2=readArrayElement(-1);
+			System.out.println("결과값: "+result2);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("ArrayIndexOutOfBoundsException 발생");
+			System.out.println(e.getMessage());
+		}
 
-//		try {
+		try {
 			//makeException이 예외를 던지는데 처리하지 않았더니, 컴파일 오류가 발생하고 있음.
 			//check Exception  컴파일할때 처리해줘야함.
-//			makeException(false);
+			makeException(true);
 			
-//		} catch (MyException e) {
-//			System.out.println("makeException메서드가 예외를 던짐");
-//			System.out.println(e.getMessage());
-//		}
+		} catch (MyException e) {
+			System.out.println("makeException메서드가 예외를 던짐");
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
