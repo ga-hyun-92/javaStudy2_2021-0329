@@ -50,7 +50,7 @@ public class Ex1 {
 			System.out.println("내가 만든 예외 메세지: "+e.getMessage());
 		}finally {
 			System.out.println("finally  코드 실행");
-			scanf.close();
+			scanf.close();//꼭 처리해줘야함.
 		}
 
 		int result=val1+val2;

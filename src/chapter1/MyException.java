@@ -2,7 +2,7 @@ package chapter1;
 
 //나만의 예외 클래스를 만듦
 //MyException이 ArrayIndexOutofBoundsException등과 같은 동일한 예외가 된다.
-public class MyException extends Exception{
+public class MyException extends RuntimeException{
 
 	//직렬화
 	private static final long serialVersionUID = -2103221287283272330L;

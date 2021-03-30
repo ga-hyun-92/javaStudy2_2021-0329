@@ -31,9 +31,9 @@ public class Ex2_2 {
 			
 		} catch (WrongIndexException e) {
 			System.out.println(e.getMessage());
+			return 0;
 			
 		}
-		 return 0;
 	}
 	
 	static void makeException(boolean turn) throws MyException {//호출한 쪽에서 예외발생되도록 한다.
