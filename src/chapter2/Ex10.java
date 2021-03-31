@@ -23,7 +23,7 @@ public class Ex10 {
 		ZoneOffset nyOffset=zdt.getOffset();
 		System.out.println(nyOffset);
 		
-//		//현재 시스템의 날짜와 시간을 갖는 객체
+		//현재 시스템의 날짜와 시간을 갖는 객체
 //		LocalDateTime dateTime=LocalDateTime.now();
 //		//한국의 시간대라는 정보를 갖고 있음.
 //		//Asia/Seoul->서울

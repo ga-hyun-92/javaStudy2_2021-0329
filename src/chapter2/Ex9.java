@@ -11,7 +11,7 @@ public class Ex9 {
 		LocalDateTime dateTime=LocalDateTime.now();
 		
 		//2.
-		dateTime=LocalDateTime.of(2020, 01,19,00,00,00);
+		dateTime=LocalDateTime.of(2020,01,19,00,00,00);
 		
 		//3.
 		LocalDate date=LocalDate.now();
