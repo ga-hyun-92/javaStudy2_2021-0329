@@ -24,6 +24,11 @@ public class Customer {
 	public void setPayMethod(String payMethod) {
 		this.payMethod = payMethod;
 	}
+
+	@Override
+	public String toString() {
+		return "연락처: "+tel+", 지불방법: "+payMethod;
+	}
 	
 	
 }

@@ -22,11 +22,13 @@ public class Ex7 {
 		//2021-03-25날짜를 갖고 있는 객체 생성
 		LocalDate ld=LocalDate.of(2021, 03, 25);
 		//1:12:34시간을 갖고 있는 객체 
-		LocalTime lt=LocalTime.of(1, 12,34);
+		LocalTime lt=LocalTime.of(1, 12, 34);
 		//2021-03-25 1:12:34 날짜와 시간을 갖고 있는 객체 
 		LocalDateTime ldt=LocalDateTime.of(ld, lt);
+		
 		//날짜,시간+시간대까지 갖고 있는 객체 
-		ZonedDateTime zdt=ZonedDateTime.of(ldt, ZoneId.of("Asia/Seoul")); //두번째 부분에는 어떤 객체의 시간대인지?우리나라/서울 이라고 표시해두는 것
+		ZonedDateTime zdt=ZonedDateTime.of(ldt, ZoneId.of("Asia/Seoul")); 
+		//두번째 부분에는 어떤 객체의 시간대인지?우리나라/서울 이라고 표시해두는 것
 		ZonedDateTime zdt2=ZonedDateTime.of(ldt, ZoneId.of("America/New_York"));
 	}
 

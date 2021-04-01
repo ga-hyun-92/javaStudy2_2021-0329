@@ -24,9 +24,14 @@ public class Ex12 {
 		
 		Set<String> keySet=customer.keySet();
 		Iterator<String> iterator=keySet.iterator();
+//		while (iterator.hasNext()) {
+//			String key = (String) iterator.next();
+//			System.out.println(key+", "+customer.get(key).getTel()+", "+customer.get(key).getPayMethod());
+//		}
+		
 		while (iterator.hasNext()) {
 			String key = (String) iterator.next();
-			System.out.println(key+", "+customer.get(key).getTel()+", "+customer.get(key).getPayMethod());
+			System.out.println("¿Ã∏ß: "+key+", "+customer.get(key));
 		}
 		
 
