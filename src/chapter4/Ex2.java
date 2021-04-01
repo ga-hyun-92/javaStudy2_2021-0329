@@ -9,6 +9,7 @@ public class Ex2 {
 	public static void main(String[] args) {
 		
 		//List에는 ArrayList,LinkedList,stack,vector 등 있다.
+		//데이터 중복 허용
 		//다형성으로 선언
 		List<String> arrayList=new ArrayList<>();
 		

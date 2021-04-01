@@ -1,6 +1,7 @@
 package chapter4;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Ex3 {
@@ -67,8 +68,29 @@ public class Ex3 {
 		int[] arr= {1,2,3,4,5};
 		for (int i : arr) {
 			System.out.println(i);
-		
 		}//end for
+		
+		System.out.println();
+//		System.out.println("for문 사용"); //내가 임의로 작성
+//		for (Iterator iterator = passengerList.iterator(); iterator.hasNext();) {
+//			Passenger p = (Passenger) iterator.next();
+//			System.out.println("이름:"+p.getName());
+//			System.out.println("연락처:"+p.getTel());
+//			System.out.println("좌석:"+p.getSeat());
+//			System.out.println("=========== ============");
+//		}
+		
+		System.out.println();
+		System.out.println("while문 사용");
+		Iterator<Passenger> it=passengerList.iterator();
+		while (it.hasNext()) {
+			Passenger p=it.next();
+			System.out.println("이름:"+p.getName());
+			System.out.println("연락처:"+p.getTel());
+			System.out.println("좌석:"+p.getSeat());
+			System.out.println("=========== ============");
+			
+		}
 
 	}
 

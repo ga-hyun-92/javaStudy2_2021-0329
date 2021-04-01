@@ -14,7 +14,7 @@ public class Ex4 {
 		
 		System.out.println(intList.get(2));
 		
-		Integer el1=intList.get(5);//¿ÀÅä¹Ú½Ì
+		Integer el1=intList.get(5);
  		System.out.println(el1);//¿ÀÅä¾ğ¹Ú½Ì
 		
 		int el2=intList.get(5);

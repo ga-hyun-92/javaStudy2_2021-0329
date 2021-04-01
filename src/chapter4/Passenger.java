@@ -40,6 +40,54 @@ public class Passenger {
 	public String toString() {
 		return "이름="+name+", 연락처= "+tel+", 좌석="+seat;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Passenger) {
+			//매개변수로 전달받은 객체를 Passenger클래스 타입으로 변환할 수 있다면
+			Passenger target=(Passenger)obj;
+			return this.hashCode()==target.hashCode();
+			
+			//내가 작성한 코드
+//			boolean nameSame=target.getName().equals(this.getName());
+//			boolean telSame=target.getTel().equals(this.getTel());
+//			boolean seatSame=target.getSeat().equals(this.getSeat());
+//			return nameSame&&telSame&&seatSame;
+		} else {
+			//매개변수로 전달받은 객체를 Passenger 클래스 타입으로 변환할 수 없다면
+			//false
+			return false;
+		}
+		
+		
+	}
+
+	@Override
+	public int hashCode() {
+		//String 클래스에 구현되어있는 HasCode를 적극적으로 활용하면
+		//쉽고 간편하게 우리에게 필요한 해시함수를 만들 수 있다.
+		
+		//String 클래스의 hashCode메서드
+		//문자열을 해시화함
+		int hashCode=name.hashCode()+tel.hashCode()+seat.hashCode();
+		
+//		int hashCode=0;
+//		if (name.equals("홍길동")) {
+//			hashCode+=1;
+//		}
+//		
+//		if(tel.equals("010-7591-8524")) {
+//			hashCode+=2;
+//		}
+//		
+//		if (seat.equals("이코노미")) {
+//			hashCode+=3;
+//		}
+		
+		return hashCode;
+	}
+	
+	
 	
 	
 }
