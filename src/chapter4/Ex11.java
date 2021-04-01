@@ -1,7 +1,9 @@
 package chapter4;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class Ex11 {
 
@@ -20,6 +22,14 @@ public class Ex11 {
 		classOneKor.put("홍길동", 73);
 		System.out.println("key=홍길동,value=73추가: "+classOneKor);
 		
+		//remove메서드 사용
+		classOneKor.remove("홍길동");
+		
+		System.out.println("key=홍길동 삭제: "+classOneKor);
+		
+		//get메서드 사용
+		System.out.println("key=황광희, value="+classOneKor.get("황광희"));
+		
 		Map<String, String> hashMap=new HashMap<String, String>();
 		
 		hashMap.put("홍길동", "이코노미");
@@ -33,6 +43,25 @@ public class Ex11 {
 	
 		hashMap.put("유노윤호", "이코노미");
 		System.out.println("key=유노윤호, value=이코노미 로 변경: "+hashMap);
+		
+		//remove메서드 사용
+		hashMap.remove("황광희");
+		System.out.println("key=황광희 삭제:"+hashMap);
+		
+		//모든 승객의 좌석등급을 출력하세요. get메서드 사용
+		System.out.println("key=홍길동, value="+hashMap.get("홍길동"));
+		System.out.println("key=고영희, value="+hashMap.get("고영희"));
+		System.out.println("key=유노윤호, value="+hashMap.get("유노윤호"));
+		System.out.println("key=김철수, value="+hashMap.get("김철수"));
+		
+		//google검색: java 8 api document 참고
+		//HashSet - keySet
+		Set<String> keySet=hashMap.keySet();
+		Iterator<String> iterator=keySet.iterator();
+		while (iterator.hasNext()) {
+			String key = (String) iterator.next();
+			System.out.println(key+"="+hashMap.get(key));
+		}
 	}
 
 }
