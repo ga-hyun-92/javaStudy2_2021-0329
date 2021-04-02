@@ -16,9 +16,6 @@ public class Ex1 {
 		//다시 또 하나의 쓰레드 만들어서 start 한다.
 		thread=new Thread(new MyThread());
 		thread.start();
-		
-		
 
 	}
-
 }

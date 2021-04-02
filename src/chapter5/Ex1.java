@@ -24,8 +24,9 @@ public class Ex1 {
 			System.out.println(birthMonth[i]);
 		}
 		
-		for (BirthMonth birthMonth2 : birthMonth) {
-			System.out.println(birthMonth2);
+		System.out.println("=========");
+		for (BirthMonth month : birthMonth) {
+			System.out.println(month);
 		}
 	}
 

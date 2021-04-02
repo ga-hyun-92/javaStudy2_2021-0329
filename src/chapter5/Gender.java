@@ -3,6 +3,7 @@ package chapter5;
 public enum Gender {
 	MALE,FEMALE;
 	
+	
 	public static Gender getGedner(int value) throws IllegalArgumentException{
 		if (value==1) {
 			return Gender.MALE;

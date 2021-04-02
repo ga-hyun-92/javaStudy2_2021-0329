@@ -37,7 +37,6 @@ public class Ex2 {
 //			
 //			if (month.equals(korMonth)) {
 //				System.out.println(birthMonth+"은 "+korMonth+"입니다.");
-//				
 //			}
 //		}
 		

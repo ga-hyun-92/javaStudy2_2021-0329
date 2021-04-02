@@ -13,7 +13,7 @@ public class MyThread3 implements Runnable{
 			if (count%50==0) {
 				System.out.println();
 			}
-			System.out.println("|");
+			System.out.print("|");
 		}
 		long end =System.currentTimeMillis();
 		

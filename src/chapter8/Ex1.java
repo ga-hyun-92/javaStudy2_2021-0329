@@ -36,9 +36,6 @@ public class Ex1 {
 		
 		System.out.println("Input Source : "+Arrays.toString(inSrc));
 		System.out.println("Output Source : "+Arrays.toString(outSrc));
-		
-		
-		
 
 	}
 

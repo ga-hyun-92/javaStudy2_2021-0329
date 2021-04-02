@@ -16,7 +16,7 @@ public class MyThread1 implements Runnable{
 			if (count%50==0) {
 				System.out.println();
 			}//end if
-			System.out.println("-");
+			System.out.print("-");
 		}//end for
 		
 		//첫 번째 작업 후의 시간
@@ -35,7 +35,7 @@ public class MyThread1 implements Runnable{
 			if (count%50==0) {
 				System.out.println();
 			}//end if
-			System.out.println("|");
+			System.out.print("|");
 		}//end for
 		
 		//두 번째 작업 후의 시간
